@@ -1,0 +1,152 @@
+/* Global Style */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif; }
+
+a {
+  text-decoration: none;
+  display: block; }
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto; }
+
+@media (max-width: 767px) {
+  /* Mobile Screen */ }
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Small Screen */
+  .container {
+    width: 750px; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* midume Screen */
+  .container {
+    width: 970px; } }
+@media (min-width: 1200px) {
+  /* Larg Screen */
+  .container {
+    width: 1170px; } }
+.application {
+  width: 700px;
+  margin: 20px auto;
+  border: 1px solid #eee;
+  padding: 20px; }
+  .application .app-header .form input, .application .app-filter .search {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    font-size: 15px;
+    padding: 0 15px;
+    border-radius: 3px; }
+  .application .app-header .form .add, .application .app-filter .buttons-filter div, .application .app-control div {
+    height: 40px;
+    line-height: 40px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    border: none;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 13px; }
+  .application .app-header .form {
+    margin-bottom: 20px; }
+    .application .app-header .form input {
+      border: 1px solid #ddd;
+      margin-bottom: 15px; }
+    .application .app-header .form .add {
+      background-color: #16a3b7;
+      width: 100%; }
+  .application .app-filter .search {
+    border: 1px solid #16a3b7;
+    margin-bottom: 20px; }
+  .application .app-filter .buttons-filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px; }
+    .application .app-filter .buttons-filter div {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      background-color: #16a3b7; }
+  .application .app-tasks {
+    margin-top: 40px; }
+    .application .app-tasks .task {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      border: 1px solid #999;
+      padding: 15px; }
+      .application .app-tasks .task:not(:last-child) {
+        margin-bottom: 15px; }
+      .application .app-tasks .task .task-text {
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1; }
+        .application .app-tasks .task .task-text p.done {
+          text-decoration: line-through;
+          color: #dc3445; }
+      .application .app-tasks .task .task-buttons {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        gap: 20px; }
+        .application .app-tasks .task .task-buttons .done {
+          width: 20px;
+          height: 20px;
+          border: 1px solid #ccc;
+          cursor: pointer; }
+          .application .app-tasks .task .task-buttons .done.checked {
+            border: 1px solid #72bc00;
+            position: relative; }
+            .application .app-tasks .task .task-buttons .done.checked::after {
+              font-family: "Font Awesome 6 Free";
+              content: "\f00c";
+              font-weight: bold;
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              -webkit-transform: translate(-50%, -50%);
+                      transform: translate(-50%, -50%);
+              color: #72bc00; }
+        .application .app-tasks .task .task-buttons .delete {
+          font-size: 20px;
+          cursor: pointer;
+          color: #dc3445; }
+  .application .app-control {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+    margin-top: 35px; }
+    .application .app-control div {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      background-color: #dc3445; }
+
+@media (max-width: 767px) {
+  .application {
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
